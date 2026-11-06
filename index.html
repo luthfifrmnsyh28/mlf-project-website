@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="MLF Project: jasa fotografi dan videografi wisuda, event sekolah, olahraga, dan wedding di Indramayu, Cirebon, dan Kuningan. Booking lewat WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%93%B7%3C/text%3E%3C/svg%3E">
+<title>MLF Project – Fotografi & Videografi Wisuda, Event, Olahraga</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5F5F2; --ink:#1A1A1A; --mute:#6E6E69; --line:#D9D9D3; --frame:#E6E6E0; --flash:#F2C230; --on-flash:#1A1A1A;
+  --btn-bg:#1A1A1A; --btn-fg:#F5F5F2;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#171716;--ink:#F2F2EE;--mute:#9A9A94;--line:#34342F;--frame:#232321;--btn-bg:#F2C230;--btn-fg:#1A1A1A}
+}
+:root[data-theme="dark"]{--paper:#171716;--ink:#F2F2EE;--mute:#9A9A94;--line:#34342F;--frame:#232321;--btn-bg:#F2C230;--btn-fg:#1A1A1A}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+p{margin:0;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--flash);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:1rem}
+.brand{font:800 1.25rem "Bricolage Grotesque",sans-serif;text-decoration:none;letter-spacing:-.02em}
+.brand span{font-weight:500;color:var(--mute)}
+.brand-logo{height:52px;width:auto;display:block}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .brand-logo{filter:invert(1)}}
+:root[data-theme="dark"] .brand-logo{filter:invert(1)}
+nav a{margin-left:1.25rem;text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center;padding:clamp(2.5rem,7vw,5.5rem) 0}
+.hero h1{font-size:clamp(2.5rem,6.4vw,5rem);font-weight:800}
+.hero p{margin:1.5rem 0 2rem;font-size:1.15rem;color:var(--mute)}
+.btn{display:inline-block;background:var(--btn-bg);color:var(--btn-fg);padding:.9rem 1.5rem;border-radius:4px;font-weight:600;text-decoration:none}
+.btn:hover{filter:brightness(1.12)}
+.btn.ghost{background:none;color:var(--ink);border:1.5px solid var(--ink);margin-left:.5rem}
+.sheet{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:var(--ink);padding:10px;border-radius:3px}
+.sheet div{aspect-ratio:2/3;background:var(--frame);display:flex;align-items:flex-end;padding:.5rem;font-size:.8rem;color:var(--mute)}
+.sheet div.hot{background:var(--flash);color:var(--on-flash);font-weight:600}
+.logo-box{background:var(--paper);border:1.5px solid var(--ink);box-shadow:10px 10px 0 var(--flash);padding:clamp(1.5rem,5vw,3rem);display:grid;place-items:center}
+.logo-box img{width:100%;height:auto;max-width:460px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo-box img{filter:invert(1)}}
+:root[data-theme="dark"] .logo-box img{filter:invert(1)}
+.bform{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;max-width:820px}
+.bform .full{grid-column:1/-1}
+.bform label,.bform legend{display:block;font-weight:600;margin-bottom:.35rem;font-size:.95rem}
+.bform input,.bform select,.bform textarea{width:100%;font:inherit;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:4px;padding:.75rem .85rem;color-scheme:light dark}
+.bform input:focus,.bform select:focus,.bform textarea:focus{border-color:var(--ink)}
+.bform fieldset{border:0;margin:0;padding:0}
+.bform .chk{display:flex;gap:.6rem;align-items:flex-start;font-weight:400;margin:.4rem 0}
+.bform .chk input{width:auto;margin-top:.35rem}
+.hint{color:var(--mute);font-size:.88rem;margin-top:.3rem}
+.est{border:1.5px solid var(--ink);box-shadow:6px 6px 0 var(--flash);padding:1rem 1.25rem}
+.est b{font:800 1.6rem "Bricolage Grotesque",sans-serif;display:block}
+#bmsg{margin-top:1rem}
+@media (max-width:640px){.bform{grid-template-columns:1fr}}
+section{padding:clamp(3rem,7vw,5rem) 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.9rem,4vw,3rem);font-weight:800;margin-bottom:.75rem}
+.lead{color:var(--mute);margin-bottom:2.5rem}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,3vw,2.5rem)}
+.services h3{font-size:1.5rem;margin-bottom:.5rem;font-weight:800}
+.services p{color:var(--mute)}
+.extra{margin-top:2.5rem;padding-top:1.5rem;border-top:1px dashed var(--line);color:var(--mute)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gallery figure{margin:0}
+.gallery .ph{background:var(--frame);border:1.5px dashed var(--line);display:grid;place-items:center;text-align:center;padding:1rem;color:var(--mute);font-size:.9rem}
+.gallery figcaption{margin-top:.5rem;font-weight:600;font-size:.95rem}
+.gallery .wide{grid-column:span 2}
+.gallery .wide .ph{aspect-ratio:4/3}
+.gallery .ph{aspect-ratio:2/3;overflow:hidden;padding:0}
+.gallery .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.gallery .ph.more{background:var(--ink);color:var(--paper);border:0;font:800 1.2rem "Bricolage Grotesque",sans-serif;text-decoration:none;padding:1.25rem}
+.gallery .ph.more:hover{background:var(--flash);color:var(--on-flash)}
+.packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.25rem;margin-bottom:2.5rem}
+.packs+h3{margin:0 0 .5rem}
+.sub{font:800 1.4rem "Bricolage Grotesque",sans-serif;margin:0 0 1rem}
+.sub small{font:400 .95rem "Instrument Sans",sans-serif;color:var(--mute);margin-left:.5rem}
+.add{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.25rem;margin:1rem 0 2rem}
+.add div{border-top:2px solid var(--ink);padding-top:.75rem}
+.add b{display:block;font-size:1.05rem}
+.add span{color:var(--mute)}
+details{border-top:1px solid var(--line);padding:1rem 0}
+summary{cursor:pointer;font-weight:600}
+details ul{color:var(--mute);padding-left:1.1rem;margin:1rem 0 0}
+details li{margin-bottom:.5rem;max-width:70ch}
+.pack{border:1.5px solid var(--line);padding:1.75rem;border-radius:4px;display:flex;flex-direction:column;gap:1rem}
+.pack.best{border-color:var(--ink);box-shadow:8px 8px 0 var(--flash)}
+.pack h3{font-size:1.4rem;font-weight:800}
+.price{font:800 2rem "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}
+.price small{font:400 .9rem "Instrument Sans",sans-serif;color:var(--mute);letter-spacing:0}
+.pack ul{margin:0;padding-left:1.1rem;color:var(--mute);font-size:.95rem}
+.pack li{margin-bottom:.35rem}
+.note{margin-top:1.5rem;color:var(--mute);font-size:.9rem}
+.cta{text-align:left}
+.cta h2{max-width:16ch}
+footer{padding:2rem 0 2.5rem;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+@media (max-width:860px){
+  .hero,.services,.packs{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  nav a:not(.keep){display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#atas" aria-label="MLF Project, kembali ke atas"><img class="brand-logo" src="assets/img/logo-mlf.png" alt="MLF Project" width="900" height="456"></a>
+    <nav>
+      <a href="#layanan">Layanan</a>
+      <a href="#karya">Karya</a>
+      <a href="#paket">Paket</a>
+      <a class="keep" href="#booking">Booking</a>
+    </nav>
+  </header>
+
+  <main id="atas">
+    <div class="hero">
+      <div>
+        <h1>Wisuda, panggung, dan pertandingan, terekam utuh.</h1>
+        <p>MLF Project adalah jasa fotografi dan videografi untuk momen yang tidak bisa diulang: toga yang dilempar, tepuk tangan penonton, dan detik terakhir di arena.</p>
+        <a class="btn" href="https://wa.me/6283821468728?text=Halo%20MLF%20Project%2C%20saya%20mau%20tanya%20paket%20foto" target="_blank" rel="noopener">Pesan lewat WhatsApp</a>
+        <a class="btn ghost" href="#karya">Lihat karya</a>
+      </div>
+      <div class="logo-box"><img src="assets/img/logo-mlf.png" alt="Logo MLF Project Photography | Videography" width="900" height="456"></div>
+    </div>
+  </main>
+
+  <section id="layanan">
+    <h2>Tiga hal yang paling kami kerjakan</h2>
+    <p class="lead">Fokus pada acara yang punya jadwal jelas dan orang yang ingin mengenangnya.</p>
+    <div class="services">
+      <div><h3>Foto wisuda</h3><p>Sesi solo, couple, dan keluarga di kampus atau lokasi pilihan Anda. Arahan pose disertakan supaya tidak kaku.</p></div>
+      <div><h3>Event sekolah dan panggung</h3><p>Dokumentasi acara dari pembukaan sampai penutupan, foto maupun video, siap dipakai untuk media sosial sekolah.</p></div>
+      <div><h3>Olahraga dan kejuaraan</h3><p>Foto aksi atlet taekwondo dan cabang lain. Orang tua dan atlet bisa memilih dan membeli foto per momen.</p></div>
+    </div>
+    <p class="extra">Juga menerima wedding, prewedding, potret personal, couple, dan keluarga. Tanyakan lewat WhatsApp.</p>
+  </section>
+
+  <section id="karya">
+    <h2>Karya terpilih</h2>
+    <p class="lead">Beberapa hasil terbaru dari wisuda, kejuaraan, dan acara.</p>
+    <div class="gallery">
+<figure class="wide"><div class="ph"><img src="assets/img/wisuda-keluarga.jpg" alt="Foto wisuda bersama keluarga berlatar langit biru" loading="lazy"></div><figcaption>Wisuda bersama keluarga</figcaption></figure>
+<figure><div class="ph"><img src="assets/img/taekwondo.jpg" alt="Atlet taekwondo berhijab bersiap di arena kejuaraan" loading="lazy"></div><figcaption>Kejuaraan taekwondo</figcaption></figure>
+<figure><div class="ph"><img src="assets/img/potret-personal.jpg" alt="Potret personal outdoor dengan blus renda" loading="lazy"></div><figcaption>Potret personal</figcaption></figure>
+<figure class="wide"><div class="ph"><img src="assets/img/foto-angkatan-sekolah.jpg" alt="Foto bersama satu angkatan siswa SMK di depan gedung sekolah" loading="lazy"></div><figcaption>Foto angkatan sekolah</figcaption></figure>
+<figure><div class="ph"><img src="assets/img/acara-panggung.jpg" alt="Pemain keyboard di atas panggung acara karnaval" loading="lazy"></div><figcaption>Acara panggung</figcaption></figure>
+<figure class="wide"><div class="ph"><img src="assets/img/wedding.jpg" alt="Pasangan pengantin berpelukan di pelaminan dengan hujan confetti" loading="lazy"></div><figcaption>Wedding</figcaption></figure>
+<figure class="wide"><a class="ph more" href="https://www.instagram.com/mlf.project28/" target="_blank" rel="noopener">Lihat lebih banyak di Instagram</a></figure>
+</div>
+  </section>
+
+  <section id="paket">
+    <h2>Paket dan harga</h2>
+    <p class="lead">Semua paket wisuda: sesi 60 menit, unlimited shoot dan lokasi, 25 foto edit, dan semua file mentah dikirim lewat Google Drive.</p>
+    <p class="sub">Wisuda outdoor</p>
+    <div class="packs">
+<div class="pack"><h3>Personal</h3><div class="price">Rp 400K <small></small></div><ul><li>1 wisudawan / wisudawati</li><li>Pose pemotretan pribadi khusus</li></ul></div><div class="pack"><h3>Bersama keluarga</h3><div class="price">Rp 550K <small></small></div><ul><li>1 wisudawan / wisudawati</li><li>Pose pribadi dan keluarga</li></ul></div><div class="pack best"><h3>Keluarga + pasangan</h3><div class="price">Rp 600K <small></small></div><ul><li>1 wisudawan / wisudawati</li><li>Pose pribadi, keluarga, dan pasangan</li></ul></div><div class="pack"><h3>Sesi group</h3><div class="price">Rp 750K <small></small></div><ul><li>Maksimal 5 orang</li><li>Termasuk pose pribadi</li><li>Durasi bisa menyesuaikan kondisi</li></ul></div>
+    </div>
+    <p class="sub">Family outdoor</p>
+    <div class="packs">
+<div class="pack"><h3>Family Silver</h3><div class="price">Rp 600K <small></small></div><ul><li>Maksimal 10 orang</li><li>Kurang dari 10 orang tetap harga sama</li><li>60 menit, unlimited shoot, 25 foto edit</li></ul></div><div class="pack"><h3>Family Gold</h3><div class="price">Rp 850K <small></small></div><ul><li>Maksimal 15 orang</li><li>Kurang dari 15 orang tetap harga sama</li><li>60 menit, unlimited shoot, 25 foto edit</li></ul></div>
+    </div>
+    <p class="sub">Foto kelas atau organisasi <small>bukan untuk foto keluarga</small></p>
+    <div class="packs">
+<div class="pack"><h3>Group A</h3><div class="price">Rp 35K <small>/ orang</small></div><ul><li>10-20 orang</li><li>Bisa per divisi/group</li><li>60 menit, unlimited shoot, 25 foto edit</li></ul></div><div class="pack"><h3>Group B</h3><div class="price">Rp 25K <small>/ orang</small></div><ul><li>20-50 orang</li><li>Bisa per divisi/group</li><li>60 menit, unlimited shoot, 25 foto edit</li></ul></div>
+    </div>
+    <p class="sub">Tambahan</p>
+    <div class="add">
+      <div><b>Waktu sesi</b><span>Rp 100rb per jam</span></div>
+      <div><b>Video cinematic</b><span>1-2 menit Rp 50rb, 3-5 menit Rp 100rb</span></div>
+      <div><b>Cetak 10R (A4) + bingkai</b><span>Rp 100rb, sudah termasuk ongkir</span></div>
+    </div>
+    <p class="note" style="margin:0 0 1.5rem">Sesi di luar jadwal wisuda lebih disarankan karena tidak ramai dan pilihan spot lebih banyak. Tersedia Sabtu dan Minggu.</p>
+    <details>
+      <summary>Syarat dan ketentuan</summary>
+      <ul>
+        <li>Harga sudah termasuk akomodasi fotografer untuk wilayah Indramayu, Cirebon, dan Kuningan.</li>
+        <li>Jadwal sah dipesan setelah uang muka minimal Rp 100rb, dibayar paling lambat H-2. Uang muka tidak dapat dikembalikan.</li>
+        <li>Jadwal bisa diubah sesuai kondisi dan ketersediaan fotografer. Perubahan lebih dari H-2 dikenakan biaya tambahan.</li>
+        <li>Pelunasan dibayar setelah sesi foto selesai di hari yang sama. Sesi dimulai sesuai kesepakatan saat pemesanan.</li>
+        <li>File mentah dikirim 1-2 hari setelah sesi. Hasil edit (color retouch) selesai 3-5 hari setelah foto diseleksi. Video cinematic selesai 3-7 hari setelah sesi.</li>
+        <li>Unduh semua file dalam 1-4 minggu, karena setelah itu file di Google Drive dihapus.</li>
+        <li>Dengan memesan, klien setuju hasil foto boleh ditampilkan di portofolio MLF Project.</li>
+      </ul>
+    </details>
+    <p style="margin-top:2rem"><a class="btn" href="https://wa.me/6283821468728?text=Halo%20MLF%20Project%2C%20saya%20mau%20tanya%20paket%20foto" target="_blank" rel="noopener">Tanya paket lewat WhatsApp</a></p>
+  </section>
+
+  <section id="booking">
+    <h2>Form booking</h2>
+    <p class="lead">Isi data sesi Anda. Setelah menekan tombol kirim, WhatsApp admin terbuka dengan pesan yang sudah terisi, tinggal Anda kirim.</p>
+    <div class="bform" id="bf">
+      <div><label for="f-nama">Nama lengkap</label><input id="f-nama" required autocomplete="name"></div>
+      <div><label for="f-wa">Nomor WhatsApp</label><input id="f-wa" type="tel" required inputmode="tel" autocomplete="tel" placeholder="08xxxxxxxxxx"></div>
+      <div class="full"><label for="f-paket">Paket</label>
+        <select id="f-paket" required>
+          <option value="">Pilih paket</option>
+          <option data-p="400000">Wisuda - Personal</option>
+          <option data-p="550000">Wisuda - Bersama Keluarga</option>
+          <option data-p="600000">Wisuda - Keluarga + Pasangan</option>
+          <option data-p="750000" data-max="5">Wisuda - Sesi Group (maks 5 orang)</option>
+          <option data-p="600000" data-max="10">Family Silver (maks 10 orang)</option>
+          <option data-p="850000" data-max="15">Family Gold (maks 15 orang)</option>
+          <option data-p="35000" data-per="1" data-min="10" data-max="20">Group A kelas/organisasi (10-20 orang, per orang)</option>
+          <option data-p="25000" data-per="1" data-min="20" data-max="50">Group B kelas/organisasi (20-50 orang, per orang)</option>
+          <option data-p="0">Event, wedding, atau lainnya (minta penawaran)</option>
+        </select></div>
+      <div><label for="f-org">Jumlah orang yang difoto</label><input id="f-org" type="number" min="1" value="1" required></div>
+      <div><label for="f-tgl">Tanggal sesi</label><input id="f-tgl" type="date" required></div>
+      <div><label for="f-jam">Jam mulai</label><input id="f-jam" type="time" required></div>
+      <div><label for="f-lok">Lokasi atau kampus</label><input id="f-lok" required placeholder="Contoh: Kampus UNWIR, Indramayu"></div>
+      <fieldset class="full"><legend>Tambahan (opsional)</legend>
+        <label class="chk"><input type="checkbox" data-add="50000" value="Video cinematic 1-2 menit"> Video cinematic 1-2 menit (Rp 50rb)</label>
+        <label class="chk"><input type="checkbox" data-add="100000" value="Video cinematic 3-5 menit"> Video cinematic 3-5 menit (Rp 100rb)</label>
+        <label class="chk"><input type="checkbox" data-add="100000" value="Cetak 10R (A4) + bingkai"> Cetak 10R (A4) + bingkai (Rp 100rb, termasuk ongkir)</label>
+        <div style="max-width:260px;margin-top:.6rem"><label for="f-jamx">Tambahan waktu sesi (jam)</label><input id="f-jamx" type="number" min="0" max="8" value="0"><p class="hint">Rp 100rb per jam.</p></div>
+      </fieldset>
+      <div class="full"><label for="f-cat">Catatan (opsional)</label><textarea id="f-cat" rows="3" placeholder="Contoh: konsep, warna baju, atau permintaan khusus"></textarea></div>
+      <div class="full est" aria-live="polite">Estimasi biaya<b id="f-est">Pilih paket dulu</b><p class="hint">Harga final dikonfirmasi admin lewat WhatsApp.</p></div>
+      <label class="chk full"><input type="checkbox" id="f-setuju" required> <span>Saya sudah membaca syarat dan ketentuan di bagian paket (uang muka minimal Rp 100rb, dibayar paling lambat H-2).</span></label>
+      <div class="full"><button type="button" class="btn" id="f-kirim" style="border:0;font:inherit;font-weight:600;cursor:pointer">Kirim lewat WhatsApp</button>
+        <div id="bmsg" role="status"></div></div>
+    </div>
+  </section>
+
+  <section id="pesan" class="cta">
+    <h2>Tanggal wisuda atau acara Anda sudah dekat?</h2>
+    <p class="lead">Melayani Indramayu, Cirebon, dan Kuningan. Kirim tanggal, lokasi, dan jenis acara. Kami balas dengan pilihan paket dan jadwal yang masih kosong.</p>
+    <a class="btn" href="https://wa.me/6283821468728?text=Halo%20MLF%20Project%2C%20saya%20mau%20booking" target="_blank" rel="noopener">Booking lewat WhatsApp</a>
+    <a class="btn ghost" href="https://www.instagram.com/mlf.project28/" target="_blank" rel="noopener">@mlf.project28</a>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 MLF Project</span>
+    <span>Fotografi dan videografi: wisuda, event, olahraga</span>
+  </div>
+</footer>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var pk=$('f-paket'),org=$('f-org'),est=$('f-est');
+var rp=function(n){return 'Rp '+n.toLocaleString('id-ID')};
+var d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());$('f-tgl').min=d.toISOString().slice(0,10);
+function opt(){return pk.options[pk.selectedIndex]}
+function adds(){var l=[],t=0;document.querySelectorAll('[data-add]').forEach(function(c){if(c.checked){l.push(c.value);t+=+c.dataset.add}});var h=Math.max(0,+$('f-jamx').value||0);if(h){l.push('Tambahan waktu '+h+' jam');t+=h*100000}return{l:l,t:t}}
+function total(){var o=opt();if(!pk.value)return null;if(o.dataset.p==='0')return 0;var b=+o.dataset.p;if(o.dataset.per)b*=Math.max(1,+org.value||1);return b+adds().t}
+function limits(){var o=opt();org.min=o.dataset.min||1;if(o.dataset.max)org.max=o.dataset.max;else org.removeAttribute('max')}
+function upd(){limits();var t=total();est.textContent=t===null?'Pilih paket dulu':(t===0?'Menunggu penawaran dari admin':rp(t))}
+document.querySelectorAll('#bf input,#bf select').forEach(function(e){e.addEventListener('input',upd);e.addEventListener('change',upd)});
+$('f-kirim').addEventListener('click',function(){
+  upd();
+  var els=document.querySelectorAll('#bf input,#bf select,#bf textarea');
+  for(var i=0;i<els.length;i++){if(!els[i].checkValidity()){els[i].reportValidity();return}}
+  var tgl=new Date($('f-tgl').value+'T00:00').toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  var a=adds(),t=total();
+  var m=['Halo MLF Project, saya mau booking sesi foto.','',
+   '*Nama:* '+$('f-nama').value.trim(),
+   '*No. WhatsApp:* '+$('f-wa').value.trim(),
+   '*Paket:* '+opt().text,
+   '*Jumlah orang:* '+org.value,
+   '*Tanggal:* '+tgl,
+   '*Jam mulai:* '+$('f-jam').value,
+   '*Lokasi:* '+$('f-lok').value.trim(),
+   '*Tambahan:* '+(a.l.length?a.l.join(', '):'-'),
+   '*Estimasi biaya:* '+(t?rp(t):'minta penawaran')];
+  var c=$('f-cat').value.trim();if(c)m.push('*Catatan:* '+c);
+  m.push('','Saya sudah membaca syarat dan ketentuan (DP minimal Rp 100.000, paling lambat H-2).');
+  var url='https://wa.me/6283821468728?text='+encodeURIComponent(m.join('\n'));
+  var box=$('bmsg');box.textContent='';
+  var l=document.createElement('a');l.href=url;l.target='_blank';l.rel='noopener';l.textContent='WhatsApp belum terbuka? Klik di sini untuk mengirim pesan booking.';
+  box.appendChild(l);
+  window.open(url,'_blank','noopener');
+});
+upd();
+})();
+</script>
+</body>
+</html>
